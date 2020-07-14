@@ -1,0 +1,39 @@
+
+.list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ }
+
+.inner-mat-card {
+    margin-right: 0.5rem;
+    flex-wrap:wrap
+}
+
+.inner-mat-card:first-child {
+    margin-top: auto;
+ }
+
+.inner-mat-card  mat-card-content {
+    word-wrap: break-word;
+    width: 120px;
+    max-width: 130px;
+ }
+
+.inner-mat-card:hover {
+    cursor: pointer;
+}
+
+.inner-mat-card img {
+    margin-bottom: 0;
+    width: 120px;
+    height: 120px;
+    max-width: 130px;
+    max-height: 130px;
+ }
+ 
+ .details{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+ }

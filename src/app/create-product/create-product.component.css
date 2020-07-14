@@ -1,0 +1,17 @@
+mat-form-field {
+    flex: 0 0 45%;
+ }
+
+ mat-card {
+    margin: 20px 30px;
+ }
+ 
+ form mat-card-content {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+ }
+ 
+ .full-width {
+    width: 100%;
+ }

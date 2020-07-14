@@ -17,10 +17,10 @@ import { PokemonProfileComponent } from './detail/pokemon-profile/pokemon-profil
 import { EffortValuePipe } from './common/effort-value.pipe';
 import { PokemonEvolutionComponent } from './detail/pokemon-evolution/pokemon-evolution.component';
 import { PokemonDamageComponent } from './detail/pokemon-damage/pokemon-damage.component';
-//import { CreateProductComponent } from './create-product/create-product.component';
-//import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import { ProductListComponent } from './product-list/product-list.component';
-//import { ProductGuardService } from './services/products/product-guard.service';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductGuardService } from './services/products/product-guard.service';
 
 @NgModule({
   declarations: [
@@ -35,8 +35,10 @@ import { PokemonDamageComponent } from './detail/pokemon-damage/pokemon-damage.c
     EffortValuePipe,
     PokemonEvolutionComponent,
     PokemonDamageComponent,
-    //CreateProductComponent,
-    //ProductListComponent
+    CreateProductComponent,
+    CreateProductComponent,
+    ProductListComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -46,10 +48,10 @@ import { PokemonDamageComponent } from './detail/pokemon-damage/pokemon-damage.c
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
-    //FormsModule,
-    //ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

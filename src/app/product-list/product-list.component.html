@@ -1,0 +1,12 @@
+<mat-card class="list-container">
+    <mat-card *ngFor="let product of productList" class="mat-elevation-z4 inner-mat-card">
+        <div><img [src]="product.imageUrl" width="200px" height="200px" /></div>
+        <div>
+            <h3>{{product.name}}</h3>
+        </div>
+        <div class="details">
+            <span>{{product.price  | currency:"INR":"symbol-narrow" }}</span>
+            <span>{{product.category}}</span>
+        </div>
+    </mat-card>
+</mat-card>
