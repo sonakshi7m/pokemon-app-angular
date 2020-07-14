@@ -1,0 +1,8 @@
+mat-toolbar h1 {
+    margin: auto;
+}
+
+mat-grid-tile mat-card {
+    width: 30%;
+    height: 70%;
+ }

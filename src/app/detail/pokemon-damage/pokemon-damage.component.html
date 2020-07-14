@@ -1,0 +1,10 @@
+<mat-toolbar class="secondary-toolbar" color="primary">
+    <span>
+        <h4 class="mat-h4">Damage When Attacked</h4>
+    </span>
+</mat-toolbar>
+<div class="damage-container">
+    <div class="damage-item" [style.background-color]="randomColor()" *ngFor="let effect of damage">
+        <div class="block">{{effect}} </div>
+    </div>
+</div>

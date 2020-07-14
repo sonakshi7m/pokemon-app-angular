@@ -1,0 +1,24 @@
+<mat-grid-list cols="3" rowHeight="28">
+    <ng-container *ngFor="let stat of stats">
+        <mat-grid-tile colspan="1">
+            <section>
+                <h4>{{ stat.stat.name | titlecase }}</h4>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2">
+            <!-- <svg height="25" class="full-width gray">
+                <rect [style.width.%]="stat.base_stat" [style.background-color]="selectedPokemon.types[0].type.color" />
+                <text x="10" y="18" font-size="15" fill="white">
+                    {{ stat.base_stat }}
+                </text>
+            </svg> -->
+
+            <div class="contain">
+                <div class="chart" [style.width.%]="stat.base_stat"
+                    [style.background-color]="selectedPokemon.types[0].type.color">
+                    {{stat.base_stat}}</div>
+            </div>
+        </mat-grid-tile>
+
+    </ng-container>
+</mat-grid-list>
