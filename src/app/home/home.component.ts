@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
   }
 
   onNext(next) {
-    console.log("here")
     this.fetchPokemons(next);
   }
 
@@ -38,7 +37,6 @@ export class HomeComponent implements OnInit {
         this.previous = this.pokemonService.previous;
         this.next = this.pokemonService.next;
         this.pokemons = data;
-        console.log("Hi pokemons :: ", this.pokemons)
 
         this.pokemons.forEach((pokemon) => {
 
@@ -51,9 +49,5 @@ export class HomeComponent implements OnInit {
         this.dataService.setOption('pokemonDetails', this.pokemonDetails);
       });
   }
-
-  // fetchPokemonData(pokemon): void {
-  //   console.log("single pokemon= ", pokemon)
-  // }
 
 }

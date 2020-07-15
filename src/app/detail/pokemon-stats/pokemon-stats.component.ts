@@ -11,7 +11,6 @@ export class PokemonStatsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.selectedPokemon)
   }
 
 

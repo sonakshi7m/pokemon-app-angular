@@ -8,7 +8,7 @@
                 Home
             </a>
             <a mat-button [routerLink]="['/details', 1]" routerLinkActive="active">
-                Details
+                Detail
             </a>
             <a mat-button [routerLink]="['create-product']" routerLinkActive="active" *ngIf="isAdmin">
                 Create Product
@@ -18,6 +18,6 @@
             </a>
         </span>
         <span class="spacer"></span>
-        <span>abc</span>
+        <app-search #search></app-search>
     </mat-toolbar-row>
 </mat-toolbar>

@@ -21,6 +21,7 @@ import { CreateProductComponent } from './create-product/create-product.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductGuardService } from './services/products/product-guard.service';
+import { SearchComponent } from './header/search/search/search.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductGuardService } from './services/products/product-guard.service';
     CreateProductComponent,
     CreateProductComponent,
     ProductListComponent,
-    ProductListComponent
+    ProductListComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

@@ -44,16 +44,12 @@ export class PokemonService {
 
   fetchPokemons(pokemonUrl?: string): Observable<any> {
 
-    // return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=35&offset=0')
-    //   .toPromise().then((res) => { console.log(res) });
-
     let url = `${this.apiUrl}pokemon/?limit=${this.limit}&offset=${this.offset}`;
 
 
     return this.http.get<any>(pokemonUrl ? pokemonUrl : url)
       .pipe(
         map((data: any) => {
-          console.log(data);
           this.next = data.next;
           this.previous = data.previous;
           return data.results;

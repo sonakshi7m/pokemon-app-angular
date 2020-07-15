@@ -1,0 +1,26 @@
+form {
+    position: fixed;
+    top: 15px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .search-box {
+    border: none;
+    border-radius: 10px;
+    max-width: 160px;
+    padding: 4px 5px;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+ }
+
+ .search-box:focus {
+    outline: none;
+ }
+ 
+ .mat-error {
+    font-size: 45%;
+    line-height: 2.4;
+ }
+ 

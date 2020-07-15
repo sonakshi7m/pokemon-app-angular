@@ -11,7 +11,6 @@ export class DataService {
 
   setOption(option, value) {
     this.data[option] = value;
-    console.log(this.data)
   }
 
   getOption() {

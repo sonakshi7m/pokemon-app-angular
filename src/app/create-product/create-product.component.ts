@@ -70,8 +70,6 @@ export class CreateProductComponent implements OnInit {
       localStorage.setItem('product_list', JSON.stringify(this.products))
     }
 
-
-    console.log(product)
     formDirective.resetForm();
 
   }

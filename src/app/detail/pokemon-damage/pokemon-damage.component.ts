@@ -12,7 +12,7 @@ export class PokemonDamageComponent implements OnInit {
   @Input() damage;
   types;
 
-  constructor(private pokemonService: PokemonService) { console.log(this.damage) }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
     this.types = forkJoin(

@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Pokemon List';
+  title = 'Pokemon';
   @HostListener("window:onbeforeunload", ["$event"])
   clearLocalStorage(event) {
     localStorage.clear();
