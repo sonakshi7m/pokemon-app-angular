@@ -74,18 +74,6 @@ export class CreateProductComponent implements OnInit {
 
   }
 
-  // create(product: Products) {
-  //   this.productsService.createProduct(product).subscribe(() => {
-  //     this.router.navigate(['products', 'list']);
-  //   });
-  // }
-
-  // update(product: Products) {
-  //   this.productsService.updateProduct(product).subscribe(() => {
-  //     this.router.navigate(['products', 'list']);
-  //   });
-  // }
-
   reset() {
     this.form.reset();
     this.form.markAsPristine();

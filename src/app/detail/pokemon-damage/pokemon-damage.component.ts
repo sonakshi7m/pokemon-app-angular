@@ -24,12 +24,12 @@ export class PokemonDamageComponent implements OnInit {
     );
   }
 
-  randomColor() {
-    let letters = '0123456789ABCDEF';
-    let color = '#';
+  getColor() {
+    let allowed = '0123456789ABCDEF';
+    let res = '#';
     for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      res += allowed[Math.floor(Math.random() * allowed.length)];
     }
-    return color;
+    return res;
   }
 }

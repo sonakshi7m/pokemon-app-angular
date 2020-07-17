@@ -6,7 +6,7 @@ mat-card img {
     max-height: 130px;
 }
 mat-card{
- margin: 0.5rem;
+ margin: 1.5rem;
 }
 
 mat-card:hover {

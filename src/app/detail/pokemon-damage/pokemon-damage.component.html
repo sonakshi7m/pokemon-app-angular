@@ -4,7 +4,7 @@
     </span>
 </mat-toolbar>
 <div class="damage-container">
-    <div class="damage-item" [style.background-color]="randomColor()" *ngFor="let effect of damage">
+    <div class="damage-item" [style.background-color]="getColor()" *ngFor="let effect of damage">
         <div class="block">{{effect}} </div>
     </div>
 </div>
