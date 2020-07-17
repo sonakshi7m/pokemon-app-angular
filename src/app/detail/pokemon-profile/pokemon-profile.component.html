@@ -21,8 +21,10 @@
     <mat-grid-tile>
         <p class="mat-body-strong">Gender Ratio</p>
     </mat-grid-tile>
-    <mat-grid-tile>{{species.genderRatio?.women}}<i class="fa fa-mars ico"></i>
-        {{species.genderRatio?.men}} <i class="fa fa-venus ico"></i> </mat-grid-tile>
+    <mat-grid-tile>{{species.genderRatio?.women}}
+        <mat-icon color="" class="tag_faces">Women</mat-icon>
+        {{species.genderRatio?.men}} <mat-icon color="" class="tag_faces">Men</mat-icon>
+    </mat-grid-tile>
     <mat-grid-tile>
         <p class="mat-body-strong">Egg Groups</p>
     </mat-grid-tile>
