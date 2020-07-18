@@ -65,9 +65,11 @@ export class CreateProductComponent implements OnInit {
     if (storedProducts) {
       storedProducts.push(product);
       localStorage.setItem('product_list', JSON.stringify(storedProducts))
+      alert("Product has been added");
     } else {
       this.products.push(product);
       localStorage.setItem('product_list', JSON.stringify(this.products))
+      alert("Product has been added");
     }
 
     formDirective.resetForm();

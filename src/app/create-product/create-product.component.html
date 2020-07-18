@@ -6,7 +6,7 @@
     </mat-card-header>
     <form [formGroup]="form" (ngSubmit)="save(form.value, formDirective)" #formDirective="ngForm" novalidate>
         <mat-card-content>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <mat-label>Name</mat-label>
                 <input matInput type="text" placeholder="Name" formControlName="name" />
                 <mat-error *ngIf="form.get('name').getError('required')">
@@ -26,7 +26,7 @@
                     Name is too short
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width" [style.bottom.px]="15">
+            <mat-form-field class="half-width" [style.bottom.px]="15">
                 <mat-label>Description</mat-label>
                 <textarea matInput formControlName="description"></textarea>
                 <mat-error *ngIf="form.get('description').getError('required')">
@@ -46,7 +46,7 @@
                     Description is too short
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <mat-label>Price</mat-label>
                 <input matInput type="text" placeholder="Price" formControlName="price" />
                 <mat-error *ngIf="form.get('price').getError('required')">
@@ -59,7 +59,7 @@
                     Price is not valid
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <mat-select placeholder="Category" formControlName="category">
                     <mat-option *ngFor="let category of categories" [value]="category">
                         {{ category }}
@@ -69,7 +69,7 @@
                     Category is required
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <input matInput type="text" placeholder="Image URL" formControlName="imageUrl" />
                 <mat-error *ngIf="form.get('imageUrl').getError('required')">
                     Image URL is required
@@ -81,7 +81,7 @@
                     Image URL is not a valid url
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <input matInput type="tel" placeholder="Phone Number" formControlName="phoneNumber" />
                 <mat-error *ngIf="form.get('phoneNumber').getError('required')">
                     Phone Number is required
@@ -100,7 +100,7 @@
                     Phone Number is not valid
                 </mat-error>
             </mat-form-field>
-            <mat-form-field class="full-width">
+            <mat-form-field class="half-width">
                 <mat-select placeholder="Select" formControlName="select">
                     <mat-option value="mobile">
                         Mobile

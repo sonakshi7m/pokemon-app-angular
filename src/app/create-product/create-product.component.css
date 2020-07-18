@@ -1,5 +1,5 @@
 mat-form-field {
-    flex: 0 0 45%;
+    flex: 0 0 30%;
  }
 
  mat-card {
@@ -12,6 +12,6 @@ mat-form-field {
        justify-content: space-between;
  }
  
- .full-width {
-    width: 100%;
+ .half-width {
+    width: 50%;
  }
